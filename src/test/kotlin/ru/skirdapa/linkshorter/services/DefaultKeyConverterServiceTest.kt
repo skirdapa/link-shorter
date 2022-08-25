@@ -2,10 +2,8 @@ package ru.skirdapa.linkshorter.services
 
 import org.junit.Assert
 import org.junit.Test
-import org.springframework.stereotype.Component
 import java.util.Random
 
-@Component
 class DefaultKeyConverterServiceTest {
 
     val service: KeyConverterService = DefaultKeyConverterService()

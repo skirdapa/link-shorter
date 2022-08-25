@@ -22,11 +22,19 @@ extra["testcontainersVersion"] = "1.17.3"
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-thymeleaf")
 	implementation("org.springframework.boot:spring-boot-starter-web")
+
+	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("org.springframework.restdocs:spring-restdocs-mockmvc")
+	testImplementation("org.dbunit:dbunit:2.7.3")
+	testImplementation("com.github.springtestdbunit:spring-test-dbunit:1.2.1")
+	testImplementation("com.h2database:h2")
+
 	testImplementation("org.testcontainers:junit-jupiter")
 }
 
@@ -48,11 +56,6 @@ tasks.withType<Test> {
 }
 
 tasks.test {
-//	outputs.dir("/test_outputs")
 	useJUnitPlatform()
 }
 
-tasks.asciidoctor {
-//	inputs.dir("/test_outputs")
-//	dependsOn(test)
-}
