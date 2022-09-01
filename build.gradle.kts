@@ -29,11 +29,15 @@ dependencies {
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 
+	implementation("org.liquibase:liquibase-core")
+
+	implementation("org.postgresql:postgresql")
+
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("org.springframework.restdocs:spring-restdocs-mockmvc")
 	testImplementation("org.dbunit:dbunit:2.7.3")
 	testImplementation("com.github.springtestdbunit:spring-test-dbunit:1.2.1")
-	testImplementation("com.h2database:h2")
+	testImplementation("com.h2database:h2:2.1.214")
 
 	testImplementation("org.testcontainers:junit-jupiter")
 }

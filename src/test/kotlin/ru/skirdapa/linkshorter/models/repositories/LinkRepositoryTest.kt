@@ -9,6 +9,7 @@ import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Test
 import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.test.context.TestPropertySource
 import ru.skirdapa.linkshorter.models.AbstractRepositoryTest
 import ru.skirdapa.linkshorter.models.Link
 import ru.skirdapa.linkshorter.repositories.LinkRepository
